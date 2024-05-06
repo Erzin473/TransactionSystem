@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TransactionSystem.Core\TransactionSystem.Core.csproj" />
+    <ProjectReference Include="..\TransactionSystem.DAL\TransactionSystem.DAL.csproj" />
+  </ItemGroup>
+
+</Project>
