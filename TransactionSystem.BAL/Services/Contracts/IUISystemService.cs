@@ -7,14 +7,6 @@ namespace TransactionSystem.BAL.Services.Contracts
         bool Exit { get; set; }
         void DisplayMenuOptions();
         string GetUserChoice();
-        Task CreateAccount();
-        Task DepositMoney();
-        Task WithdrawMoney();
-        Task CheckAccountBalance();
-        Task TransferMoney();
-        Task DeleteAccount();
-        Task EditAccount();
-        Task AllAccount();
         Task ProcessUserOption(MenuOption option);
     }
 }

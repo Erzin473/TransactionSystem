@@ -32,7 +32,7 @@ namespace TransactionSystem.BAL.Services.Implementations
             return Console.ReadLine();
         }
 
-        public async Task CreateAccount()
+        private async Task CreateAccount()
         {
             Console.Write("Enter name: ");
             string name = Console.ReadLine();
@@ -52,7 +52,7 @@ namespace TransactionSystem.BAL.Services.Implementations
             Console.WriteLine(accountMessage);
         }
 
-        public async Task DepositMoney()
+        private async Task DepositMoney()
         {
             Console.Write("Enter account number: ");
             string depositAccountNumber = Console.ReadLine();
@@ -69,7 +69,7 @@ namespace TransactionSystem.BAL.Services.Implementations
             Console.WriteLine(depositMessage);
         }
 
-        public async Task WithdrawMoney()
+        private async Task WithdrawMoney()
         {
             Console.Write("Enter account number: ");
             string withdrawAccountNumber = Console.ReadLine();
@@ -86,7 +86,7 @@ namespace TransactionSystem.BAL.Services.Implementations
             Console.WriteLine(withdrawMessage);
         }
 
-        public async Task CheckAccountBalance()
+        private async Task CheckAccountBalance()
         {
             Console.Write("Enter account number: ");
             string checkBalanceAccountNumber = Console.ReadLine();
@@ -95,7 +95,7 @@ namespace TransactionSystem.BAL.Services.Implementations
             Console.WriteLine(balanceMessage);
         }
 
-        public async Task TransferMoney()
+        private async Task TransferMoney()
         {
             Console.Write("Enter source account number: ");
             string sourceAccountNumber = Console.ReadLine();
@@ -115,7 +115,7 @@ namespace TransactionSystem.BAL.Services.Implementations
             Console.WriteLine(transferMessage);
         }
 
-        public async Task DeleteAccount()
+        private async Task DeleteAccount()
         {
             Console.Write("Enter account number: ");
             string accountNumber = Console.ReadLine();
@@ -124,7 +124,7 @@ namespace TransactionSystem.BAL.Services.Implementations
             Console.WriteLine(accountMessage);
         }
 
-        public async Task EditAccount()
+        private async Task EditAccount()
         {
             Console.Write("Enter account number: ");
             string accountNumber = Console.ReadLine();
@@ -136,7 +136,7 @@ namespace TransactionSystem.BAL.Services.Implementations
             Console.WriteLine(accountMessage);
         }
 
-        public async Task AllAccount()
+        private async Task AllAccount()
         {
             List<Account> allAccounts = await _transactionService.GetAllAsync();
           
